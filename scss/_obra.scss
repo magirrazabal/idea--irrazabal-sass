@@ -14,17 +14,18 @@
     gap: 1px;
     align-content: center;
     margin: 5%;
-    
     }
     article {
         background-position: center;
         background-size: cover;
-        margin: 0;
         transition: all 1.5s;
-    }
-    article:hover {
+        height: 90%;
+        width: 90%;
+        
+    &:hover {
         height: 100%;
         width: 100%;
+    }
     }
     .imagen1 {
         grid-area: imagen1;
