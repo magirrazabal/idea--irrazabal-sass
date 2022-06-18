@@ -1,0 +1,26 @@
+.descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(159, 152, 128, 0.05);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-align: justify;
+}
+.fotoPro1 {
+    grid-area: fotoPro1;
+    background-image: url(./imagenes/b1.png);
+}
+.fotoPro2 {
+    grid-area: fotoPro2;
+    background-image: url(./imagenes/b1a.png);
+}
+.fotoPro3 {
+    grid-area: fotoPro3;
+    background-image: url(./imagenes/b1b.png);
+}
+.fotoPro4 {
+    grid-area: fotoPro4;
+    background-image: url(./imagenes/b1c.gif);
+}

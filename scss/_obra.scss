@@ -1,0 +1,44 @@
+.galeriaObra {
+    display: flex;
+    flex-flow: row nowrap;
+    display: grid;
+    grid-template-areas:
+    "imagen1 imagen2"
+    "imagen3 imagen2"
+    "imagen4 imagen4"
+    ;
+    height: 700px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    align-content: center;
+    margin: 5%;
+    
+    }
+    article {
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        transition: all 1.5s;
+    }
+    article:hover {
+        height: 100%;
+        width: 100%;
+    }
+    .imagen1 {
+        grid-area: imagen1;
+        background-image: url(../imagenes/galeria1.jpg);
+    }
+    .imagen2 {
+        grid-area: imagen2;
+        background-image: url(../imagenes/galeria2.jpg);
+    }
+    .imagen3 {
+        grid-area: imagen3;
+        background-image: url(../imagenes/galeria3.JPEG);
+    }
+    .imagen4 {
+        grid-area: imagen4;
+        background-image: url(../imagenes/galeria4.JPG);
+    }
