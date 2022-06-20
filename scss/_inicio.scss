@@ -1,3 +1,7 @@
+$ocre: #cbb055;
+$casinegro: #342c22;
+$grisverdoso: #3b3823;
+
 #gridTotal {
     display: grid;
     grid-template-areas: 
@@ -25,7 +29,7 @@ p {
     text-align: center;
     width: 75%;
     height: auto;
-    color: #342c22;
+    color: $casinegro;
     margin-bottom: 7px;
     padding: 5px;
     }
@@ -51,7 +55,7 @@ p {
         border-color: white;
         &:hover {
         border-width: 3px;
-        border-color: #cbb055;
+        border-color: $ocre;
         border-style: solid;
         }
     }

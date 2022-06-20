@@ -10144,14 +10144,14 @@ body {
   transition: height 2s;
 }
 .navbar a:hover {
-  border-bottom: solid 10px rgb(203, 176, 85);
+  border-bottom: solid 10px #cbb055;
   height: 6%;
 }
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   overflow: visible;
 }
 .navbar .nav-item {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5019607843);
   height: 30px;
   font-weight: bolder;
   z-index: 7;
@@ -10164,7 +10164,7 @@ body {
 
 .dropdown-menu a:hover {
   border-bottom: none;
-  color: rgb(203, 176, 85);
+  color: #cbb055;
   height: 6%;
 }
 

@@ -1,8 +1,11 @@
+$ocre: #cbb055;
+$casinegro: #342c22;
+$grisverdoso: #3b3823;
+
 #mainSobre {
     width: 90%;
     height: auto;
 }
-
 .sobreRasgo {
     display: flex;
     flex-flow: column nowrap;
@@ -23,7 +26,7 @@
     background-position: center;
     background-size:auto;
     background-repeat: no-repeat;
-    color: #342c22;
+    color: $casinegro;
     margin: 3px 5px;
 }
 .sobreRasgo p {
@@ -33,7 +36,7 @@
     margin: 10px 20%;
     padding: 2px;
     text-align: justify;
-    color: #3b3823;
+    color: $grisverdoso;
 }
 .sobreObras {
     display: flex;
@@ -54,7 +57,7 @@
     background-position: center;
     background-size:auto;
     background-repeat: no-repeat;
-    color: #342c22;
+    color: $casinegro;
     margin: 3px 5px;
 }
 .sobreObras p {
@@ -64,7 +67,7 @@
         margin: 2px 20%;
         padding: 10px;
         text-align: justify;
-        color: #3b3823;
+        color: $grisverdoso;
 }
 .sobreNos {
     display: flex;
@@ -86,7 +89,7 @@
     background-position: center;
     background-size:auto;
     background-repeat: no-repeat;
-    color: #342c22;
+    color: $casinegro;
     margin: 3px 5px;
 }
 .sobreNos h3 {

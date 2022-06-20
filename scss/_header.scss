@@ -1,3 +1,7 @@
+$ocre: #cbb055;
+$casinegro: #342c22;
+$grisverdoso: #3b3823;
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -6,7 +10,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    border-bottom: dashed 1px #cbb055;
+    border-bottom: dashed 1px $ocre;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -20,11 +24,11 @@
  a {
     justify-content: flex-end;
     text-decoration: none;
-    color: #342c22;
+    color: $casinegro;
     text-transform: uppercase;
     transition: height 2s;
     &:hover {
-    border-bottom: solid 10px rgb(203, 176, 85);
+    border-bottom: solid 10px $ocre;
     height: 6%;
      }
     }
@@ -32,7 +36,7 @@
     overflow:visible;
                     }
     .nav-item {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff80;
     height: 30px;
     font-weight: bolder;
     z-index: 7;
@@ -44,6 +48,6 @@
 }
 .dropdown-menu a:hover {
         border-bottom: none;
-        color: rgb(203, 176, 85);
+        color: $ocre;
         height: 6%;
 }

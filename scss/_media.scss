@@ -1,3 +1,7 @@
+$ocre: #cbb055;
+$casinegro: #342c22;
+$grisverdoso: #3b3823;
+
 /*Responsive design*/
     /*Tablet*/
     @media (min-width: 481px) and (max-width: 1023px){
@@ -33,12 +37,12 @@
         span a {
             justify-content: flex-end;
             text-decoration: none;
-            color: #342c22;
+            color: $casinegro;
             text-transform: uppercase;
             font-size: 12px;
         }
         span:hover {
-            border-bottom: solid 2px #cbb055   ;
+            border-bottom: solid 2px $ocre;
         }
         .sobre {
             display: flex;
@@ -57,7 +61,7 @@
             text-align: justify;
             width: 90%;
             height: 100px;
-            color: #342c22;
+            color: $casinegro;
             margin-bottom: 7px;
             padding: 5px;
             font-size: 10px;
@@ -113,7 +117,7 @@
             display: flex;
             flex-flow: row wrap;
             list-style: none;
-            color: #342c22;
+            color: $casinegro;
             width: 100%;
             height: auto;
             margin: 3px;
@@ -124,7 +128,7 @@
         }
         .proyectos img {
             border-style:dashed;
-            border-color: #cbb055;
+            border-color: $ocre;
             border-width: 1px;
             border-radius: 10%;
             margin: 2px;
@@ -194,7 +198,7 @@
             background-position: center;
             background-size:auto;
             background-repeat: no-repeat;
-            color: #342c22;
+            color: $casinegro;
             margin: 3px 5px;
         }
     #mainSobre {
@@ -207,7 +211,7 @@
             margin: 10px 5%;
             padding: 2px;
             text-align: justify;
-            color: #3b3823;        
+            color: $grisverdoso;        
         }
         .sobreNos h2 {
             display: flex;
@@ -220,7 +224,7 @@
             background-position: center;
             background-size:auto;
             background-repeat: no-repeat;
-            color: #342c22;
+            color: $casinegro;
         }
     .sobreNos h3 {
             display: flex;
@@ -323,14 +327,14 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #342c22;
+        color: $casinegro;
         text-transform: uppercase;
         font-size: 10px;
         margin: 1px;
-        background-color: #cbb055;
+        background-color: $ocre;
     }
     span:hover {
-        border-bottom: solid 2px #cbb055   ;
+        border-bottom: solid 2px $ocre;
     }
     .sobre {
         display: flex;
@@ -352,7 +356,7 @@
         text-align: justify;
         width: 90%;
         height: 100px;
-        color: #342c22;
+        color: $casinegro;
         margin-bottom: 7px;
         padding: 5px;
         font-size: 10px;
@@ -414,7 +418,7 @@
         flex-flow: row wrap;
         text-align: center;
         list-style: none;
-        color: #342c22;
+        color: $casinegro;
         width: 100%;
         height: auto;
         margin: 3px;
@@ -425,7 +429,7 @@
     }
     .proyectos img {
         border-style:dashed;
-        border-color: #cbb055;
+        border-color: $ocre;
         border-width: 1px;
         border-radius: 10%;
         margin: 2px;
@@ -555,7 +559,7 @@
         background-position: center;
         background-size:auto;
         background-repeat: no-repeat;
-        color: #342c22;
+        color: $casinegro;
     }
 #mainSobre p {
         display: flex;
@@ -564,7 +568,7 @@
         margin: 10px 5%;
         padding: 2px;
         text-align: justify;
-        color: #3b3823;        
+        color: $grisverdoso;        
     }
 .sobreNos h2 {
         display: flex;
@@ -577,7 +581,7 @@
         background-position: center;
         background-size:auto;
         background-repeat: no-repeat;
-        color: #342c22;
+        color: $casinegro;
     }
 .sobreNos h3 {
         display: flex;
