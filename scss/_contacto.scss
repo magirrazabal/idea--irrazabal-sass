@@ -1,3 +1,14 @@
+// Variables
+$ocre: #cbb055;
+$casinegro: #342c22;
+$grisverdoso: #3b3823;
+$beigeclaro: #9f9880;
+// Mixin
+@mixin proportion ($alto, $ancho, $margin) {
+	height: $alto;
+	width: $ancho;
+	margin: $margin;
+}
 .gridContacto {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -5,9 +16,7 @@
     grid-template-areas: 
     "mensajes datosContacto"
     "mapa mapa";
-    width: 100%;
-    height: auto;
-    margin: 0 20px 10px 20px;
+    @include proportion(auto, 100%, 0 20px 10px 20px);
 }
 #mensajes {
     grid-area: mensajes;
@@ -21,17 +30,15 @@
 #mensajes {
 display: flex;
 flex-flow: column nowrap;
-width: 90%;
-height: auto;
-margin: 1%;
+@include proportion(auto, 90%, 1%);
 }
 #mensajes h3 {
     text-transform: uppercase;
-    color: #3b3823;
+    color: $grisverdoso;
     margin-left: 10px;
 }
 form {
-    color: #3b3823;
+    color: $grisverdoso;
     font-size: small;
     margin-left: 10px;
 }
@@ -43,16 +50,16 @@ form {
     align-items: center;
 }
 .botones {
-    background-color: #9f9880;
-    color: #3b3823;
+    background-color: $beigeclaro;
+    color: $grisverdoso;
     border: none;
     border-radius: 12px;
-    width: 100px;
+    @include proportion(auto, 100px, 5px);
     padding: 1px;
     margin: 5px;
 }
 .botones:hover {
-    background-color: #cbb055;
+    background-color: $ocre;
     cursor: pointer;
 }
 .cajasContacto {
@@ -63,18 +70,16 @@ form {
     background-color: rgba(159, 152, 128, 0.1);
 }
 #datosContacto {
+    @include proportion(auto, 90%, 1%);
     display: flex;
     flex-flow: column nowrap;
-    width: 90%;
-    height: auto;
-    margin: 1%; 
     padding: 3px;
     justify-content: center; 
     align-items: center;
 }
 #datosContacto h3 {
     text-transform: uppercase;
-    color: #3b3823;
+    color: $grisverdoso;
     margin-left: 10px;
 }
 #datosContacto ul {
@@ -83,10 +88,10 @@ text-decoration: none;
 }
 #datosContacto a {
     text-decoration: none;
-    color: #342c22;
+    color: $casinegro;
 }
 #datosContacto a:hover {
-    color: #cbb055;
+    color: $ocre;
 }
 #datosContacto li {
     padding: 5px;

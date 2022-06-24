@@ -1,6 +1,12 @@
+// Variables
 $ocre: #cbb055;
 $casinegro: #342c22;
-
+// Mixin
+@mixin proportion ($alto, $ancho, $margin) {
+	height: $alto;
+	width: $ancho;
+	margin: $margin;
+}
 .gridProyectos {
     display: grid;
     grid-template-areas: 
@@ -21,13 +27,11 @@ $casinegro: #342c22;
     grid-area: pie;
 }
 .proyectos {
+    @include proportion(auto, 100%, 3px);
     display: flex;
     flex-flow: row wrap;
     list-style: none;
     color: $casinegro;
-    width: 100%;
-    height: auto;
-    margin: 3px;
  h2 {
     text-align: center;
     font-size: 20px;

@@ -1,3 +1,9 @@
+// Mixin
+@mixin proportion ($alto, $ancho, $margin) {
+	height: $alto;
+	width: $ancho;
+	margin: $margin;
+}
 .galeriaObra {
     display: flex;
     flex-flow: row nowrap;
@@ -7,13 +13,11 @@
     "imagen3 imagen2"
     "imagen4 imagen4"
     ;
-    height: 700px;
-    width: 90%;
+    @include proportion(700px, 90%, 5%);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1px;
     align-content: center;
-    margin: 5%;
     }
     article {
         background-position: center;
