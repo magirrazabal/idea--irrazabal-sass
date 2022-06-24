@@ -10206,22 +10206,22 @@ body {
 }
 
 .sobre {
+  height: auto;
+  width: 100%;
+  margin: 0;
   grid-area: sobre;
   display: flex;
-  width: 100%;
-  height: auto;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
   padding: 5px;
 }
 .sobre p {
-  text-align: center;
-  width: 75%;
   height: auto;
+  width: 75%;
+  margin: 0 0 7px 0;
+  text-align: center;
   color: #342c22;
-  margin-bottom: 7px;
   padding: 5px;
 }
 .sobre .video {
@@ -10276,13 +10276,13 @@ body {
 }
 
 .proyectos {
+  height: auto;
+  width: 100%;
+  margin: 3px;
   display: flex;
   flex-flow: row wrap;
   list-style: none;
   color: #342c22;
-  width: 100%;
-  height: auto;
-  margin: 3px;
 }
 .proyectos h2, .proyectos .h2 {
   text-align: center;
@@ -10344,11 +10344,11 @@ body {
   grid-template-areas: "imagen1 imagen2" "imagen3 imagen2" "imagen4 imagen4";
   height: 700px;
   width: 90%;
+  margin: 5%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1px;
   align-content: center;
-  margin: 5%;
 }
 
 article {
@@ -10388,21 +10388,22 @@ article:hover {
   height: auto;
 }
 
-.sobreRasgo {
+.sobreRasgo, .sobreNos, .sobreObras {
+  height: auto;
+  width: 100%;
+  margin: 2px 50px;
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
-  height: auto;
   justify-content: center;
-  margin: 2px 50px;
   text-align: center;
 }
 
-.sobreRasgo h2, .sobreRasgo .h2 {
+.sobreRasgo h2, .sobreNos h2, .sobreObras h2, .sobreRasgo .h2, .sobreNos .h2, .sobreObras .h2 {
+  height: 50px;
+  width: 100%;
+  margin: 3px 5px;
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
-  height: 50px;
   justify-content: center;
   align-items: center;
   background-image: url(../imagenes/ejemploback.png);
@@ -10410,10 +10411,9 @@ article:hover {
   background-size: auto;
   background-repeat: no-repeat;
   color: #342c22;
-  margin: 3px 5px;
 }
 
-.sobreRasgo p {
+.sobreRasgo p, .sobreNos p, .sobreObras p {
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
@@ -10423,71 +10423,7 @@ article:hover {
   color: #3b3823;
 }
 
-.sobreObras {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  margin: 2px 50px;
-}
-
-.sobreObras h2, .sobreObras .h2 {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imagenes/ejemploback.png);
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  color: #342c22;
-  margin: 3px 5px;
-}
-
-.sobreObras p {
-  display: flex;
-  flex-flow: column nowrap;
-  align-content: center;
-  margin: 2px 20%;
-  padding: 10px;
-  text-align: justify;
-  color: #3b3823;
-}
-
-.sobreNos {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  margin: 2px 50px;
-}
-
-.sobreNos h2, .sobreNos .h2 {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imagenes/ejemploback.png);
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  color: #342c22;
-  margin: 3px 5px;
-}
-
-.sobreNos h3, .sobreNos .h3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.miniBox {
+.sobreNos .miniBox {
   margin: 1% 17%;
 }
 
@@ -10546,8 +10482,8 @@ article:hover {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "mensajes datosContacto" "mapa mapa";
-  width: 100%;
   height: auto;
+  width: 100%;
   margin: 0 20px 10px 20px;
 }
 
@@ -10566,8 +10502,8 @@ article:hover {
 #mensajes {
   display: flex;
   flex-flow: column nowrap;
-  width: 90%;
   height: auto;
+  width: 90%;
   margin: 1%;
 }
 
@@ -10596,9 +10532,10 @@ form {
   color: #3b3823;
   border: none;
   border-radius: 12px;
+  height: auto;
   width: 100px;
-  padding: 1px;
   margin: 5px;
+  padding: 1px;
 }
 
 .botones:hover {
@@ -10615,11 +10552,11 @@ form {
 }
 
 #datosContacto {
+  height: auto;
+  width: 90%;
+  margin: 1%;
   display: flex;
   flex-flow: column nowrap;
-  width: 90%;
-  height: auto;
-  margin: 1%;
   padding: 3px;
   justify-content: center;
   align-items: center;

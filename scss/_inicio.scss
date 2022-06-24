@@ -1,7 +1,13 @@
+// Variables
 $ocre: #cbb055;
 $casinegro: #342c22;
 $grisverdoso: #3b3823;
-
+// Mixin
+@mixin proportion ($alto, $ancho, $margin) {
+	height: $alto;
+	width: $ancho;
+	margin: $margin;
+}
 #gridTotal {
     display: grid;
     grid-template-areas: 
@@ -16,21 +22,17 @@ $grisverdoso: #3b3823;
     grid-area: cabecera;
 }
 .sobre {
+    @include proportion(auto, 100%, 0);
     grid-area: sobre;
     display: flex;
-    width: 100%;
-    height: auto;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin: 0;
     padding: 5px;
 p {
+    @include proportion(auto, 75%, 0 0 7px 0);
     text-align: center;
-    width: 75%;
-    height: auto;
     color: $casinegro;
-    margin-bottom: 7px;
     padding: 5px;
     }
 .video {
