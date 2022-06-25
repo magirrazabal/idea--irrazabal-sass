@@ -9,6 +9,12 @@ $beigeclaro: #9f9880;
 	width: $ancho;
 	margin: $margin;
 }
+//Mapa-Botones de contacto
+$dondeEncontrarnos: (
+    box1: rgba(200, 192, 164, 0.1),
+    box2: rgba(104, 98, 68, 0.1),
+    box3: rgba(66, 65, 62, 0.2),
+);
 .gridContacto {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -69,6 +75,11 @@ form {
     border: none;
     background-color: rgba(159, 152, 128, 0.1);
 }
+@each $boton, $colores in $dondeEncontrarnos {
+    .botones-#{$boton} {
+        background-color: $colores;
+    }
+}
 #datosContacto {
     @include proportion(auto, 90%, 1%);
     display: flex;
@@ -88,15 +99,14 @@ text-decoration: none;
 }
 #datosContacto a {
     text-decoration: none;
-    color: $casinegro;
+    color: $ocre;
 }
 #datosContacto a:hover {
-    color: $ocre;
+    color: $casinegro;
 }
 #datosContacto li {
     padding: 5px;
     margin-bottom: 3px;
-    background-color: rgba(159, 152, 128, 0.1);
     border-radius: 5px;
 }
 #mapa{

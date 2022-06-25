@@ -10552,6 +10552,18 @@ form {
   background-color: rgba(159, 152, 128, 0.1);
 }
 
+.botones-box1 {
+  background-color: rgba(200, 192, 164, 0.1);
+}
+
+.botones-box2 {
+  background-color: rgba(104, 98, 68, 0.1);
+}
+
+.botones-box3 {
+  background-color: rgba(66, 65, 62, 0.2);
+}
+
 #datosContacto {
   height: auto;
   width: 90%;
@@ -10576,17 +10588,16 @@ form {
 
 #datosContacto a {
   text-decoration: none;
-  color: #342c22;
+  color: #cbb055;
 }
 
 #datosContacto a:hover {
-  color: #cbb055;
+  color: #342c22;
 }
 
 #datosContacto li {
   padding: 5px;
   margin-bottom: 3px;
-  background-color: rgba(159, 152, 128, 0.1);
   border-radius: 5px;
 }
 
