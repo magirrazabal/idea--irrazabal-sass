@@ -10313,28 +10313,92 @@ body {
   background-color: rgba(159, 152, 128, 0.05);
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
+  margin: 2px;
   text-align: justify;
 }
 
 .fotoPro1 {
   grid-area: fotoPro1;
-  background-image: url(./imagenes/b1.png);
+  background-image: url(../imagenes/b1.png);
 }
 
 .fotoPro2 {
   grid-area: fotoPro2;
-  background-image: url(./imagenes/b1a.png);
+  background-image: url(../imagenes/b1a.png);
 }
 
 .fotoPro3 {
   grid-area: fotoPro3;
-  background-image: url(./imagenes/b1b.png);
+  background-image: url(../imagenes/b1b.png);
 }
 
 .fotoPro4 {
   grid-area: fotoPro4;
-  background-image: url(./imagenes/b1c.gif);
+  background-image: url(../imagenes/b1c.gif);
+}
+
+/*Segundo proyecto*/
+.a-fotoPro1 {
+  grid-area: fotoPro1;
+  background-image: url(../imagenes/loscohiues-a.png);
+}
+
+.a-fotoPro2 {
+  grid-area: fotoPro2;
+  background-image: url(../imagenes/loscohiues-d.JPG);
+}
+
+.a-fotoPro3 {
+  grid-area: fotoPro3;
+  background-image: url(../imagenes/loscohiues-c.JPG);
+}
+
+.a-fotoPro4 {
+  grid-area: fotoPro4;
+  background-image: url(../imagenes/loscohiues.gif);
+}
+
+/*Tercer proyecto*/
+.b-fotoPro1 {
+  grid-area: fotoPro1;
+  background-image: url(../imagenes/bdm-a.JPG);
+}
+
+.b-fotoPro2 {
+  grid-area: fotoPro2;
+  background-image: url(../imagenes/bdm-b.JPG);
+}
+
+.b-fotoPro3 {
+  grid-area: fotoPro3;
+  background-image: url(../imagenes/bdm-c.gif);
+}
+
+.b-fotoPro4 {
+  grid-area: fotoPro4;
+  background-image: url(../imagenes/bdm-d.gif);
+}
+
+/*Cuarto proyecto*/
+.c-fotoPro1 {
+  grid-area: fotoPro1;
+  background-image: url(../imagenes/buchu-a.gif);
+}
+
+.c-fotoPro2 {
+  grid-area: fotoPro2;
+  background-image: url(../imagenes/buchu-b.png);
+}
+
+.c-fotoPro3 {
+  grid-area: fotoPro3;
+  background-image: url(../imagenes/buchu-c.JPG);
+}
+
+.c-fotoPro4 {
+  grid-area: fotoPro4;
+  background-image: url(../imagenes/buchu.png);
 }
 
 .galeriaObra {
