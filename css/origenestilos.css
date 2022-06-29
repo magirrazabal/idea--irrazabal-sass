@@ -10121,6 +10121,10 @@ body {
   justify-items: start;
 }
 
+.navbar-light .nav-item .nav-link, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+  color: #342c22;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -10149,19 +10153,21 @@ body {
 }
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   overflow: visible;
+  height: auto;
 }
 .navbar .nav-item {
-  background-color: rgba(255, 255, 255, 0.5019607843);
+  background-color: hsla(0deg, 0%, 100%, 0.502);
   height: 30px;
-  font-weight: bolder;
+  color: #342c22;
+  font-weight: lighter;
   z-index: 7;
 }
 
 .dropdown-menu a {
   text-transform: lowercase;
   border-bottom: none;
+  font-weight: lighter;
 }
-
 .dropdown-menu a:hover {
   border-bottom: none;
   color: #cbb055;
@@ -10679,6 +10685,644 @@ form {
   width: 100%;
   height: 100vh;
   grid-template-areas: "descripcion fotoPro1 fotoPro2" "descripcion fotoPro3 fotoPro4";
+}
+
+/*Responsive design*/
+/*Tablet*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  .cabecera {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-items: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    width: 100px;
+    height: 100px;
+  }
+  #menu {
+    height: 90%;
+    width: 75%;
+    margin: 5px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: stretch;
+    border-bottom: none;
+  }
+  span {
+    padding: 3px;
+  }
+  span a {
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #342c22;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  span:hover {
+    border-bottom: solid 2px #cbb055;
+  }
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    overflow: visible;
+  }
+  .nav-item {
+    background-color: rgba(255, 255, 255, 0.5019607843);
+    height: 20px;
+    font-weight: bolder;
+    z-index: 7;
+  }
+  .sobre {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: start;
+    align-items: center;
+    padding: 0;
+  }
+  .sobre video {
+    margin-bottom: 2px;
+  }
+  .sobre p {
+    height: 100px;
+    width: 90%;
+    margin: 0 0 7px 0;
+    text-align: justify;
+    color: #342c22;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .menuDos {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .menuDosItem {
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 2px;
+  }
+  .gridProyectos {
+    display: grid;
+    grid-template-areas: "cabeceraP" "proyectos" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto 50px;
+  }
+  .cabeceraP {
+    grid-area: cabeceraP;
+  }
+  .proyectos {
+    grid-area: proyectos;
+  }
+  #pie {
+    grid-area: pie;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .cabeceraP {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .cabeceraP span {
+    padding: 3px;
+    margin-bottom: 30px;
+  }
+  .proyectos {
+    height: auto;
+    width: 100%;
+    margin: 3px;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    color: #342c22;
+  }
+  .proyectos h2, .proyectos .h2 {
+    text-align: center;
+    font-size: 10px;
+  }
+  .proyectos img {
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    border-style: dashed;
+    border-color: #cbb055;
+    border-width: 1px;
+    border-radius: 10%;
+    padding: 0%;
+  }
+  .proyectos li {
+    padding: 0;
+    margin: 1px;
+  }
+  .gridSubProyecto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: "descripcion descripcion" "fotoPro1 fotoPro2" "fotoPro3 fotoPro4";
+  }
+  .descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(159, 152, 128, 0.05);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-align: justify;
+  }
+  .fotoPro1 {
+    grid-area: fotoPro1;
+    background-image: url(./imagenes/b1.png);
+  }
+  .fotoPro2 {
+    grid-area: fotoPro2;
+    background-image: url(./imagenes/b1a.png);
+  }
+  .fotoPro3 {
+    grid-area: fotoPro3;
+    background-image: url(./imagenes/b1b.png);
+  }
+  .fotoPro4 {
+    grid-area: fotoPro4;
+    background-image: url(./imagenes/b1c.gif);
+  }
+  #mainSobre div {
+    height: auto;
+    width: 100%;
+    margin: 3px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+  }
+  #mainSobre h2, #mainSobre .h2 {
+    height: 30px;
+    width: 100%;
+    margin: 3px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imagenes/ejemploback.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #342c22;
+  }
+  #mainSobre {
+    width: 100%;
+  }
+  #mainSobre p {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin: 10px 5%;
+    padding: 2px;
+    text-align: justify;
+    color: #3b3823;
+  }
+  .sobreNos h2, .sobreNos .h2 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imagenes/ejemploback.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #342c22;
+  }
+  .sobreNos h3, .sobreNos .h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+  }
+  article {
+    margin: 3% 3%;
+  }
+  .sobreNos article img {
+    height: 70px;
+    width: 70px;
+  }
+  .sobreNos article p {
+    text-align: justify;
+  }
+  .leftSide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .rightSide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  .gridContacto {
+    height: auto;
+    width: 100%;
+    margin: 0 10px 5px 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "mensajes" "datosContacto" "mapa";
+  }
+  #mensajes {
+    grid-area: mensajes;
+  }
+  #datosContacto {
+    grid-area: datosContacto;
+  }
+  #mapa {
+    grid-area: mapa;
+  }
+  #mapa {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+  }
+  #mapa iframe {
+    width: 90%;
+    height: 30vh;
+  }
+}
+/*Mobile*/
+@media (max-width: 480px) {
+  .cabecera {
+    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px auto;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 12vh;
+  }
+  .logo {
+    height: 90px;
+    width: 90px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: center;
+    padding: 0;
+  }
+  #menu {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    border-bottom: none;
+  }
+  span {
+    padding: 0;
+  }
+  span a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #342c22;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 1px;
+    background-color: #cbb055;
+  }
+  span:hover {
+    border-bottom: solid 2px #cbb055;
+  }
+  .sobre {
+    height: 150px;
+    width: 100%;
+    margin: 1px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: start;
+    align-items: center;
+    padding: 0;
+  }
+  .sobre video {
+    height: auto;
+    width: 100%;
+    margin: 0 0 2px 0px;
+    display: flex;
+  }
+  .sobre p {
+    height: 100px;
+    width: 90%;
+    margin: 0 0 7px 0;
+    text-align: justify;
+    color: #342c22;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .menuDos {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .menuDos ul img {
+    height: 100px;
+    width: 100px;
+  }
+  .menuDos ul {
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-row-gap: 2px;
+  }
+  #gridProyectos {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px auto auto;
+    grid-template-areas: "cabecera" "proyectos" "pie";
+  }
+  .cabeceraP {
+    grid-area: cabeceraP;
+  }
+  .proyectos {
+    grid-area: proyectos;
+  }
+  #pie {
+    grid-area: pie;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .cabeceraP {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .cabeceraP span {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .proyectos {
+    height: auto;
+    width: 100%;
+    margin: 3px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    list-style: none;
+    color: #342c22;
+  }
+  .proyectos h2, .proyectos .h2 {
+    text-align: center;
+    font-size: 10px;
+  }
+  .proyectos img {
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    border-style: dashed;
+    border-color: #cbb055;
+    border-width: 1px;
+    border-radius: 10%;
+    padding: 0%;
+  }
+  .proyectos li {
+    padding: 0;
+    margin: 1px;
+  }
+  .gridSubProyectoO {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "cabecera" "gridSubProyecto";
+  }
+  .cabecera {
+    grid-area: cabecera;
+  }
+  .gridSubProyecto {
+    grid-area: gridSubProyecto;
+  }
+  .gridSubProyecto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+    height: 70vh;
+    grid-template-areas: "cabecera cabecera" "descripcion descripcion" "fotoPro1 fotoPro2" "fotoPro3 fotoPro4";
+  }
+  .descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(159, 152, 128, 0.05);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-align: justify;
+  }
+  .fotoPro1 {
+    grid-area: fotoPro1;
+    background-image: url(./imagenes/b1.png);
+  }
+  .fotoPro2 {
+    grid-area: fotoPro2;
+    background-image: url(./imagenes/b1a.png);
+  }
+  .fotoPro3 {
+    grid-area: fotoPro3;
+    background-image: url(./imagenes/b1b.png);
+  }
+  .fotoPro4 {
+    grid-area: fotoPro4;
+    background-image: url(./imagenes/b1c.gif);
+  }
+  .galeriaObra {
+    display: flex;
+    flex-flow: row nowrap;
+    display: grid;
+    grid-template-areas: "cabecera cabecera" "imagen1 imagen2" "imagen3 imagen2" "imagen4 imagen4";
+    height: 400px;
+    width: 70%;
+    margin: 5px 5px 15px 15%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px;
+    align-content: center;
+  }
+  article {
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+  #sobreRes {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "cabecera" "mainSobre";
+  }
+  .cabeceraS {
+    grid-area: cabecera;
+    height: auto;
+    width: 100%;
+  }
+  #mainSobre {
+    grid-area: mainSobre;
+    width: 100%;
+  }
+  .cabeceraP span {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  #mainSobre div {
+    height: auto;
+    width: 100%;
+    margin: 3px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+  }
+  #mainSobre h2, #mainSobre .h2 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imagenes/ejemploback.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #342c22;
+  }
+  #mainSobre p {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin: 10px 5%;
+    padding: 2px;
+    text-align: justify;
+    color: #3b3823;
+  }
+  .sobreNos h2, .sobreNos .h2 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imagenes/ejemploback.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #342c22;
+  }
+  .sobreNos h3, .sobreNos .h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: small;
+  }
+  article {
+    margin: 1% 3%;
+  }
+  .sobreNos article img {
+    height: 50px;
+    width: 50px;
+  }
+  .sobreNos article p {
+    text-align: justify;
+  }
+  .leftSide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .rightSide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  #gridContacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: auto;
+    grid-template-areas: "cabeceraC" "gridContacto";
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .cabeceraC {
+    grid-area: cabeceraC;
+    height: auto;
+    width: 100%;
+  }
+  .gridContacto {
+    height: auto;
+    width: 90%;
+    margin: 2% 0 0 2px;
+    grid-area: gridContacto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "mensajes" "datosContacto" "mapa";
+  }
+  #mensajes {
+    grid-area: mensajes;
+  }
+  #datosContacto {
+    grid-area: datosContacto;
+  }
+  #mapa {
+    grid-area: mapa;
+  }
+  #mapa {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+  }
+  #mapa iframe {
+    width: 90%;
+    height: 30vh;
+  }
 }
 
 /*# sourceMappingURL=origenestilos.css.map */

@@ -65,6 +65,7 @@ $grisverdoso: #3b3823;
             color: $casinegro;
             padding: 5px;
             font-size: 10px;
+            background-color: red;
         } 
         .menuDos {
             display: flex;
@@ -73,7 +74,7 @@ $grisverdoso: #3b3823;
             align-items: center;
             flex-flow: column wrap;
         }
-        .menuDos ul {
+        .menuDosItem {
             display: flex;
             flex-flow: column wrap;
             list-style: none;

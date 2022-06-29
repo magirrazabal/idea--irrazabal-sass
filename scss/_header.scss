@@ -7,6 +7,11 @@ $grisverdoso: #3b3823;
     flex-direction: row;
     justify-items: start;
 }
+.navbar-light .nav-item .nav-link, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active{
+
+    color: $casinegro;
+
+    }
 .navbar {
     display: flex;
     align-items: center;
@@ -34,20 +39,25 @@ $grisverdoso: #3b3823;
     }
     .container-fluid {
     overflow:visible;
-                    }
+    height: auto;
+    }
     .nav-item {
-    background-color: #ffffff80;
+    background-color: hsla(0, 0%, 100%, 0.502);
     height: 30px;
-    font-weight: bolder;
+    color: $casinegro;
+    font-weight: lighter;
     z-index: 7;
 }
 }
 .dropdown-menu a {
     text-transform: lowercase;
     border-bottom: none;
-}
-.dropdown-menu a:hover {
+    font-weight: lighter;
+
+&:hover {
         border-bottom: none;
         color: $ocre;
         height: 6%;
 }
+}
+
