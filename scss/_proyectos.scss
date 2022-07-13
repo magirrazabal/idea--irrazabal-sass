@@ -54,3 +54,16 @@ li {
     margin: 1px;
 }
 }
+.card {
+    border-color: white;
+}
+.btn-primary {
+    background-color: #9f9880;
+    color: $casinegro;
+    border-color: #9f9880;
+    &:hover {
+        background-color: $ocre;
+        color: $casinegro;
+        border-color: $ocre;
+    }
+}

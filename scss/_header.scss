@@ -17,7 +17,7 @@ $grisverdoso: #3b3823;
     align-items: center;
     border-bottom: dashed 1px $ocre;
     display: flex;
-    flex-flow: row nowrap;
+    // flex-flow: row nowrap;
     align-items: center;
     justify-items: center;
     align-items: stretch;
@@ -38,11 +38,13 @@ $grisverdoso: #3b3823;
      }
     }
     .container-fluid {
-    overflow:visible;
+    overflow: visible;
     height: auto;
+    padding: 2px;
+    margin: 2px;
     }
     .nav-item {
-    background-color: hsla(0, 0%, 100%, 0.502);
+    background-color: #f8f9fa;
     height: 30px;
     color: $casinegro;
     font-weight: lighter;
@@ -60,4 +62,6 @@ $grisverdoso: #3b3823;
         height: 6%;
 }
 }
-
+.inicioHide {
+    display: none;
+}

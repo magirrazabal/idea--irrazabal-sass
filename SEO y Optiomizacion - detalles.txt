@@ -1,9 +1,0 @@
-				Para SEO:
-- Agregué keywords: arquitectura y diseño, bioclimatica, contemporanea, sustentable, sistema en seco construccion
-- Agregué una meta descripcion: Estudio de arquitectura de sistema en seco: paneles SIP. Sistema practico, eficiente y de rápido montaje.
-- Me asguré de que los títlos estén ordenados
-
-				Optimización del contenido:
-- Optimizacion de ciertas imagenes, las de menor tamaño como placeholders e iconos
-- Con Sass borré el código basura
-- Usé efectos hechos en css en lugar de descargarlos

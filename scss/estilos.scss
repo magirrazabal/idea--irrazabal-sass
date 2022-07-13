@@ -178,19 +178,19 @@ $grisverdoso: #3b3823;
         }
         .fotoPro1 {
             grid-area: fotoPro1;
-            background-image: url(./imagenes/b1.png);
+
         }
         .fotoPro2 {
             grid-area: fotoPro2;
-            background-image: url(./imagenes/b1a.png);
+
         }
         .fotoPro3 {
             grid-area: fotoPro3;
-            background-image: url(./imagenes/b1b.png);
+
         }
         .fotoPro4 {
             grid-area: fotoPro4;
-            background-image: url(./imagenes/b1c.gif);
+
         }
     #mainSobre div {
         @include proportion(auto, 100%, 3px 5px);

@@ -10130,7 +10130,6 @@ body {
   align-items: center;
   border-bottom: dashed 1px #cbb055;
   display: flex;
-  flex-flow: row nowrap;
   align-items: center;
   justify-items: center;
   align-items: stretch;
@@ -10154,9 +10153,11 @@ body {
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   overflow: visible;
   height: auto;
+  padding: 2px;
+  margin: 2px;
 }
 .navbar .nav-item {
-  background-color: hsla(0deg, 0%, 100%, 0.502);
+  background-color: #f8f9fa;
   height: 30px;
   color: #342c22;
   font-weight: lighter;
@@ -10172,6 +10173,10 @@ body {
   border-bottom: none;
   color: #cbb055;
   height: 6%;
+}
+
+.inicioHide {
+  display: none;
 }
 
 #pie {
@@ -10231,6 +10236,8 @@ body {
   padding: 5px;
 }
 .sobre .video {
+  width: 1000px;
+  height: 500px;
   margin-bottom: 10px;
 }
 
@@ -10310,6 +10317,21 @@ body {
 .proyectos li {
   padding: 0;
   margin: 1px;
+}
+
+.card {
+  border-color: white;
+}
+
+.btn-primary {
+  background-color: #9f9880;
+  color: #342c22;
+  border-color: #9f9880;
+}
+.btn-primary:hover {
+  background-color: #cbb055;
+  color: #342c22;
+  border-color: #cbb055;
 }
 
 .descripcion {
@@ -10850,19 +10872,15 @@ form {
   }
   .fotoPro1 {
     grid-area: fotoPro1;
-    background-image: url(./imagenes/b1.png);
   }
   .fotoPro2 {
     grid-area: fotoPro2;
-    background-image: url(./imagenes/b1a.png);
   }
   .fotoPro3 {
     grid-area: fotoPro3;
-    background-image: url(./imagenes/b1b.png);
   }
   .fotoPro4 {
     grid-area: fotoPro4;
-    background-image: url(./imagenes/b1c.gif);
   }
   #mainSobre div {
     height: auto;
