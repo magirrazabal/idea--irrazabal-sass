@@ -10193,6 +10193,7 @@ body {
 #pie p {
   display: flex;
   flex-flow: row;
+  margin: 0 2%;
 }
 
 #redes {
@@ -10498,10 +10499,11 @@ article:hover {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-image: url(../imagenes/ejemploback.png);
-  background-position: center;
+  background-position: 0 0;
   background-size: auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: #342c22;
 }
 
@@ -10753,25 +10755,29 @@ form {
   }
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     overflow: visible;
+    width: auto;
   }
   .nav-item {
     background-color: rgba(255, 255, 255, 0.5019607843);
     height: 20px;
+    padding: 2px;
     font-weight: bolder;
     z-index: 7;
   }
   .sobre {
-    height: auto;
-    width: 100%;
-    margin: 0;
+    height: 400px;
+    width: auto;
+    margin: 1px;
     display: flex;
     flex-flow: column nowrap;
     justify-items: start;
     align-items: center;
     padding: 0;
   }
-  .sobre video {
+  .sobre .video {
     margin-bottom: 2px;
+    width: 500px;
+    height: auto;
   }
   .sobre p {
     height: 100px;
@@ -10899,64 +10905,54 @@ form {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-image: url(./imagenes/ejemploback.png);
+    background-image: url(../imagenes/ejemploback.png);
     background-position: center;
     background-size: auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: #342c22;
   }
   #mainSobre {
-    width: 100%;
+    width: 80%;
+    height: auto;
   }
-  #mainSobre p {
+  .sobreRasgo, .sobreObras, .sobreNos {
+    height: auto;
+    width: 90%;
+    margin: 2px 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .sobreRasgo h2, .sobreObras h2, .sobreNos h2, .sobreRasgo .h2, .sobreObras .h2, .sobreNos .h2 {
+    height: 50px;
+    width: 90%;
+    margin: 3px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../imagenes/ejemploback.png);
+    background-position: 0 0;
+    background-size: auto;
+    background-repeat: repeat;
+    color: #342c22;
+  }
+  .sobreRasgo p, .sobreObras p, .sobreNos p {
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
-    margin: 10px 5%;
+    margin: 5px 10%;
     padding: 2px;
     text-align: justify;
     color: #3b3823;
   }
-  .sobreNos h2, .sobreNos .h2 {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./imagenes/ejemploback.png);
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    color: #342c22;
+  .miniBox {
+    margin: 10% 17%;
   }
-  .sobreNos h3, .sobreNos .h3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: medium;
-  }
-  article {
-    margin: 3% 3%;
-  }
-  .sobreNos article img {
-    height: 70px;
-    width: 70px;
-  }
-  .sobreNos article p {
-    text-align: justify;
-  }
-  .leftSide {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .rightSide {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    align-content: flex-end;
+  .miniBox h3, .miniBox .h3 {
+    margin: 0 15%;
   }
   .gridContacto {
     height: auto;
@@ -10986,6 +10982,11 @@ form {
   #mapa iframe {
     width: 90%;
     height: 30vh;
+  }
+  #pie {
+    width: auto;
+    height: 3vh;
+    justify-content: space-between;
   }
 }
 /*Mobile*/
@@ -11038,8 +11039,8 @@ form {
     border-bottom: solid 2px #cbb055;
   }
   .sobre {
-    height: 150px;
-    width: 100%;
+    height: auto;
+    width: auto;
     margin: 1px;
     display: flex;
     flex-flow: column nowrap;
@@ -11047,10 +11048,10 @@ form {
     align-items: center;
     padding: 0;
   }
-  .sobre video {
-    height: auto;
-    width: 100%;
-    margin: 0 0 2px 0px;
+  .sobre .video {
+    height: 200px;
+    width: 300px;
+    margin: 1px;
     display: flex;
   }
   .sobre p {
@@ -11088,7 +11089,7 @@ form {
     height: 100vh;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 250px auto auto;
+    grid-template-rows: 150px auto auto;
     grid-template-areas: "cabecera" "proyectos" "pie";
   }
   .cabeceraP {
@@ -11117,7 +11118,7 @@ form {
     margin: 3px;
     display: flex;
     flex-flow: row wrap;
-    text-align: center;
+    text-align: start;
     list-style: none;
     color: #342c22;
   }
@@ -11139,14 +11140,6 @@ form {
     padding: 0;
     margin: 1px;
   }
-  .gridSubProyectoO {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "cabecera" "gridSubProyecto";
-  }
-  .cabecera {
-    grid-area: cabecera;
-  }
   .gridSubProyecto {
     grid-area: gridSubProyecto;
   }
@@ -11155,7 +11148,7 @@ form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     grid-template-areas: "cabecera cabecera" "descripcion descripcion" "fotoPro1 fotoPro2" "fotoPro3 fotoPro4";
   }
   .descripcion {
@@ -11170,19 +11163,19 @@ form {
   }
   .fotoPro1 {
     grid-area: fotoPro1;
-    background-image: url(./imagenes/b1.png);
+    background-image: url(../imagenes/b1.png);
   }
   .fotoPro2 {
     grid-area: fotoPro2;
-    background-image: url(./imagenes/b1a.png);
+    background-image: url(../imagenes/b1a.png);
   }
   .fotoPro3 {
     grid-area: fotoPro3;
-    background-image: url(./imagenes/b1b.png);
+    background-image: url(../imagenes/b1b.png);
   }
   .fotoPro4 {
     grid-area: fotoPro4;
-    background-image: url(./imagenes/b1c.gif);
+    background-image: url(../imagenes/b1c.gif);
   }
   .galeriaObra {
     display: flex;
@@ -11239,10 +11232,10 @@ form {
     height: 30px;
     justify-content: center;
     align-items: center;
-    background-image: url(./imagenes/ejemploback.png);
+    background-image: url(../imagenes/ejemploback.png);
     background-position: center;
     background-size: auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: #342c22;
   }
   #mainSobre p {
@@ -11340,6 +11333,11 @@ form {
   #mapa iframe {
     width: 90%;
     height: 30vh;
+  }
+  #pie {
+    width: auto;
+    height: 3vh;
+    justify-content: space-between;
   }
 }
 

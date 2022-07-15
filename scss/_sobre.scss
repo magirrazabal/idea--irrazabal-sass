@@ -25,10 +25,11 @@ $grisverdoso: #3b3823;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url(../imagenes/ejemploback.png);
-    background-position: center;
+    background-position: 0 0;
     background-size:auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: $casinegro;
 }
 .sobreRasgo p {

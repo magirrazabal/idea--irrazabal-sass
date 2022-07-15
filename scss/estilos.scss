@@ -60,31 +60,39 @@ $grisverdoso: #3b3823;
         }
         .container-fluid {
             overflow:visible;
-                            }
+            width: auto;
+
+                        }
             .nav-item {
             background-color: #ffffff80;
             height: 20px;
+            padding: 2px;
             font-weight: bolder;
             z-index: 7;
         }
         .sobre {
-            @include proportion(auto, 100%, 0);
+            height: 400px;
+            width: auto;
+            margin: 1px;
             display: flex;
             flex-flow: column nowrap;
             justify-items: start;
             align-items: center;
             padding: 0;
-        }
-        .sobre video {
+        
+        .video {
         margin-bottom: 2px;
+        width: 500px;
+        height: auto;
         }
-        .sobre p {
+        p {
             @include proportion(100px, 90%, 0 0 7px 0);
             text-align: justify;
             color: $casinegro;
             padding: 5px;
             font-size: 10px;
         } 
+    }
         .menuDos {
             display: flex;
             margin: 0;
@@ -205,65 +213,58 @@ $grisverdoso: #3b3823;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            background-image: url(./imagenes/ejemploback.png);
+            background-image: url(../imagenes/ejemploback.png);
             background-position: center;
             background-size:auto;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             color: $casinegro;
         }
+
     #mainSobre {
-        width: 100%;
+        width: 80%;
+        height: auto;
     }
-    #mainSobre p {
-            display: flex;
-            flex-flow: column nowrap;
-            align-content: center;
-            margin: 10px 5%;
-            padding: 2px;
-            text-align: justify;
-            color: $grisverdoso;        
-        }
-        .sobreNos h2 {
-            display: flex;
-            flex-flow: column nowrap;
-            width: 100%;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            background-image: url(./imagenes/ejemploback.png);
-            background-position: center;
-            background-size:auto;
-            background-repeat: no-repeat;
-            color: $casinegro;
-        }
-    .sobreNos h3 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: medium;
-        }
-    article {
-        margin: 3% 3%;   
+    .sobreRasgo {
+        @include proportion(auto, 90%, 2px 50px);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
     }
-    .sobreNos article img {
-        height: 70px;
-        width: 70px; 
+    .sobreRasgo h2 {
+        @include proportion(50px, 90%, 3px 5px);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(../imagenes/ejemploback.png);
+        background-position: 0 0;
+        background-size:auto;
+        background-repeat: repeat;
+        color: $casinegro;
     }
-    .sobreNos article p {
-    text-align: justify;
+    .sobreRasgo p {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        margin: 5px 10%;
+        padding: 2px;
+        text-align: justify;
+        color: $grisverdoso;
     }
-    .leftSide {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-start;
-            align-items: flex-end;
-        }
-    .rightSide {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-end;
-            align-content: flex-end;   
-        }
+    .sobreObras {
+        @extend .sobreRasgo
+    }
+    .sobreNos {
+        @extend .sobreRasgo;    
+    }
+        .miniBox {
+    margin: 10% 17%;
+    h3 {
+        margin: 0 15%;
+    }
+    }
    .gridContacto {
     @include proportion(auto, 100%, 0 10px 5px 10px);
         display: grid;
@@ -294,6 +295,11 @@ $grisverdoso: #3b3823;
     width: 90%;
     height: 30vh;
 }
+#pie {
+    width: auto;
+    height: 3vh;
+    justify-content: space-between;
+  }
 }
 /*Mobile*/
 @media (max-width: 480px) {
@@ -341,36 +347,40 @@ $grisverdoso: #3b3823;
         border-bottom: solid 2px $ocre;
     }
     .sobre {
-        @include proportion(150px, 100%, 1px);
+        height: auto;
+        width: auto;
+        margin: 1px;
         display: flex;
         flex-flow: column nowrap;
         justify-items: start;
         align-items: center;
         padding: 0;
-    }
-    .sobre video {
-    @include proportion(auto, 100%, 0 0 2px 0px);
+    
+    .video {
+    height: 200px;
+    width: 300px;
+    margin: 1px;
     display: flex;
     }
-    .sobre p {
+    p {
         @include proportion(100px, 90%, 0 0 7px 0);
         text-align: justify;
         color: $casinegro;
         padding: 5px;
         font-size: 10px;
     } 
+        }
     .menuDos {
         display: flex;
         margin: 0;
         justify-content: center;
         align-items: center;
         flex-flow: column wrap;
-    }
-    .menuDos ul img {
+    ul img {
         height: 100px;
         width: 100px;
     }
-    .menuDos ul {
+    ul {
         display: flex;
         flex-flow: column wrap;
         list-style: none;
@@ -379,13 +389,14 @@ $grisverdoso: #3b3823;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
         grid-row-gap: 2px;
-    } 
+    }
+        }
     #gridProyectos {
         display: grid;
         height: 100vh;
         width: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 250px auto auto; grid-template-areas: 
+        grid-template-rows: 150px auto auto; grid-template-areas: 
         "cabecera"
         "proyectos"
         "pie"
@@ -415,15 +426,15 @@ $grisverdoso: #3b3823;
         @include proportion(auto, 100%, 3px);
         display: flex;
         flex-flow: row wrap;
-        text-align: center;
+        text-align: start;
         list-style: none;
         color: $casinegro;
-    }
-    .proyectos h2 {
+    
+    h2 {
         text-align: center;
         font-size: 10px;
     }
-    .proyectos img {
+    img {
         @include proportion(100px, 100px, 2px);
         border-style:dashed;
         border-color: $ocre;
@@ -431,21 +442,12 @@ $grisverdoso: #3b3823;
         border-radius: 10%;
         padding: 0%;
     }
-    .proyectos li {
+    li {
         padding: 0;
         margin: 1px;
         
     }
-    .gridSubProyectoO {
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: 
-        "cabecera"
-        "gridSubProyecto";
-    }
-    .cabecera{
-        grid-area: cabecera;
-    }
+        }
     .gridSubProyecto {
     grid-area:gridSubProyecto ;
 }
@@ -454,7 +456,7 @@ $grisverdoso: #3b3823;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
         width: 100%;
-        height: 70vh;
+        height: 50vh;
         grid-template-areas:
         "cabecera cabecera" 
         "descripcion descripcion"
@@ -473,19 +475,19 @@ $grisverdoso: #3b3823;
 }
 .fotoPro1 {
     grid-area: fotoPro1;
-    background-image: url(./imagenes/b1.png);
+    background-image: url(../imagenes/b1.png);
 }
 .fotoPro2 {
     grid-area: fotoPro2;
-    background-image: url(./imagenes/b1a.png);
+    background-image: url(../imagenes/b1a.png);
 }
 .fotoPro3 {
     grid-area: fotoPro3;
-    background-image: url(./imagenes/b1b.png);
+    background-image: url(../imagenes/b1b.png);
 }
 .fotoPro4 {
     grid-area: fotoPro4;
-    background-image: url(./imagenes/b1c.gif);
+    background-image: url(../imagenes/b1c.gif);
 }
 .galeriaObra {
     display: flex;
@@ -545,10 +547,10 @@ $grisverdoso: #3b3823;
         height: 30px;
         justify-content: center;
         align-items: center;
-        background-image: url(./imagenes/ejemploback.png);
+        background-image: url(../imagenes/ejemploback.png);
         background-position: center;
         background-size:auto;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         color: $casinegro;
     }
 #mainSobre p {
@@ -651,4 +653,9 @@ text-align: justify;
         width: 90%;
         height: 30vh;
     }
-}
+    #pie {
+        width: auto;
+        height: 3vh;
+        justify-content: space-between;
+      }
+    }
